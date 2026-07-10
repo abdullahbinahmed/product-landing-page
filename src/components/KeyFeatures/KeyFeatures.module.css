@@ -1,0 +1,7 @@
+.keyFeatures {
+    display: flex;
+    flex-direction: row;
+}
+.iconWrapper svg {
+    font-size: 100px;
+}

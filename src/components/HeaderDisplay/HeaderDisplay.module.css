@@ -28,9 +28,6 @@
     padding: 100px 100px;
 }
 
-.cta h2 {
-    color: #111111;
-}
 .cta button {
     background-color: white;
     color: #111111;
@@ -50,6 +47,5 @@
     .headerContainer{
         aspect-ratio: 16/9;
         min-height: 600px;
-        max-height: 80vh;
     }
 }

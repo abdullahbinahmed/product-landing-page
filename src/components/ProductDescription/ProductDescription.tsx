@@ -1,9 +1,13 @@
 import React from "react";
 import styles from "./ProductDescription.module.css";
+import DescriptionImage from "../../assets/himiway-ebike-description-image.webp";
 const ProductDescription: React.FC = () => {
   return (
-    <header className={styles.headerContainer}>
-      <h2 className={styles.productHeading}>Himiway Electric Bike</h2>
+    <section className={styles.headerContainer}>
+      <div>
+        <img src={DescriptionImage} className={styles.descriptionImage} />
+      </div>
+      <h2 className={styles.productHeading}>WHY WE MADE THIS</h2>
       <p className={styles.productDescription}>
         Built for those who refuse to be limited by the pavement, the Himiway
         All-Terrain Electric Cruiser blends raw power with rugged durability.
@@ -16,7 +20,7 @@ const ProductDescription: React.FC = () => {
         suspension fork, and high-torque hub motor, no terrain is off-limits.
         Escape the ordinary and master the outdoors.
       </p>
-    </header>
+    </section>
   );
 };
 

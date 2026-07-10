@@ -1,26 +1,24 @@
-.headerContainer {
-    background-image: url("../../assets/himiway-ebike.webp");
-    background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
-    width: 100%;
-    aspect-ratio: 4/3;
+.productDescriptionContainer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
+    padding: 0 50px;
     box-sizing: border-box;
+    gap: 30px;
 }
-
-.productHeading {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    color: #111111;
-    font-size: 32px;
-    margin: 0;
-    text-align: center;
+.productDescription {
+    font-size: 10px;
+}
+.imageWrapper {
+    max-width: 100%;
+}
+.textWrapper {
+    max-width: 100%;
+}
+.descriptionImage {
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100%;
 }
 .cta {
     align-self: flex-end;
@@ -30,22 +28,25 @@
 }
 
 @media (min-width: 768px) {
-    .headerContainer {
-        aspect-ratio: 16/10;
-        min-height: 450px;
+    .productDescriptionContainer{
+        flex-direction: row;
+        align-items: center;
+        padding: 0 100px;
     }
-    .productHeading {
-        font-size: 32px;
+    .imageWrapper {
+        flex: 3;
+    }
+
+    .textWrapper {
+        flex: 2;
+    }
+    .descriptionImage {
+        aspect-ratio: 4/3;
     }
 }
 
 @media (min-width: 1024px) {
-    .headerContainer{
-        aspect-ratio: 16/9;
-        min-height: 600px;
-        max-height: 80vh;
-    }
-    .productHeading {
-        font-size: 44px;
+    .productDescriptionContainer{
+        padding: 0 200px;
     }
 }

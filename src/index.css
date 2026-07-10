@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700;800&display=swap');
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -32,7 +33,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
+    --text: #111111;
     --text-h: #f3f4f6;
     --bg: #16171d;
     --border: #2e303a;
@@ -64,6 +65,8 @@
 
 body {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
 }
 
 h1,
@@ -74,25 +77,49 @@ h2 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 32px;
   letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
+  margin: 20px 0;
+  @media (min-width: 768px) {
+    font-size: 44px;
+    margin: 24px 0;
+  }
+  @media (min-width: 1024px) {
+    font-size: 56px;
+    margin: 28px 0;
+  }
+  @media (min-width: 1440px) {
+    font-size: 64px;
+    margin: 32px 0;
   }
 }
 h2 {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
+  @media (min-width: 768px) {
+    font-size: 28px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 36px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 42px;
   }
 }
 p {
+  font-size: 16px;
   margin: 0;
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
 
 code,

@@ -2,6 +2,7 @@ import React from "react";
 import HeaderDisplay from "../../components/HeaderDisplay";
 import KeyFeatures from "../../components/KeyFeatures";
 import ProductDescription from "../../components/ProductDescription";
+import Footer from "../../components/Footer";
 
 const ProductLandingPage: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const ProductLandingPage: React.FC = () => {
         <KeyFeatures />
         <ProductDescription />
       </main>
+      <Footer />
     </>
   );
 };

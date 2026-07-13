@@ -5,9 +5,10 @@ const HeaderDisplay: React.FC = () => {
     <header className={styles.headerContainer}>
       <h1 className={styles.productHeading}>Himiway Electric Bike</h1>
       <section className={styles.cta}>
-        <h2>The Conqueror Electric Bike</h2>
-        <p>Conquer every trail. Redefine your ride with unmatched power.</p>
-
+        <div className={styles.textWrapper}>
+          <h2 className={styles.ctaHeading}>The Conqueror Electric Bike</h2>
+          <p>Conquer every trail. Redefine your ride with unmatched power.</p>
+        </div>
         <button className={styles.ctaButton} type={"button"}>
           SHOP THE HIMIWAY ELECTRIC BIKE
         </button>

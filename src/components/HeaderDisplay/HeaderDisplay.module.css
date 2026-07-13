@@ -16,16 +16,21 @@
 .productHeading {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    letter-spacing: -0.5px;
     color: #111111;
     margin: 0;
     text-align: center;
 }
 .cta {
+    display: flex;
+    flex-direction: column;
     text-align: left;
     margin-right: auto;
     max-width: 450px;
-    padding: 100px 100px;
+    padding: 30px;
+    gap: 10px;
+}
+.textWrapper{
+    display: none;
 }
 
 .cta button {
@@ -33,7 +38,7 @@
     color: #111111;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 @media (min-width: 768px) {
@@ -41,11 +46,27 @@
         aspect-ratio: 16/10;
         min-height: 450px;
     }
+    .cta {
+        text-align: left;
+        margin-right: auto;
+        max-width: 450px;
+        padding: 100px 100px;
+        gap: 30px;
+    }
+    .cta button {
+        padding: 16px;
+    }
 }
 
 @media (min-width: 1024px) {
     .headerContainer{
         aspect-ratio: 16/9;
         min-height: 600px;
+    }
+    .textWrapper{
+        display: block;
+    }
+    .cta button {
+        max-width: 70%;
     }
 }

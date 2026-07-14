@@ -1,75 +1,52 @@
-# React + TypeScript + Vite
+Here is your complete, ready-to-use README.md file. It explicitly details the exact dev and build run commands as requested:
+Markdown
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🎨 Product Landing Page (Frontend)
 
-Currently, two official plugins are available:
+A clean, responsive, and minimalist product landing page for **Himiway EBikes**—built with React, TypeScript, and Vite. This interface demonstrates clean visual hierarchy, semantic HTML elements, and fluid layouts across desktop, tablet, and mobile device viewports.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Design & Layout Features
+* **Semantic HTML:** Constructed using structural elements (`<header>`, `<main>`, `<section>`, `<footer>`) to ensure optimal SEO and web accessibility.
+* **Responsive Architecture:** Employs CSS Flexbox, CSS Grid systems, and media queries to achieve fluid responsiveness from wide screens down to small mobile devices.
+* **React Icons Integration:** Employs lightweight, accessible vector graphics using `react-icons`.
+* **TypeScript Integrity:** Fully typed layouts and components to prevent runtime errors.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 Page Structure
+* **Header with Product Hero and Image:** Features a sticky navigation bar displaying the product name prominently alongside a responsive call-to-action (CTA). Presents a representative overview layout pairing a catchy value proposition with a clean product illustration/mockup.
+* **Key Features Grid:** A 3-column responsive card layout (`CSS Grid`) highlighting at least three key capabilities.
+* **Product Description:** A concise description outlining the core utility of Himiway EBikes.
+* **Footer:** Semantic bottom layout displaying basic contact information and essential links.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ⚙️ Setup, Dev & Run Instructions
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Follow these quick steps to launch the frontend web application locally:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
+### 1. Install Dependencies
+Run this command in your terminal within this directory to install the packages defined in the `package.json`:
+```bash
+npm install
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+### 2. Run the Development Server (Dev Command)
+Start the local development server with hot module replacement (HMR) enabled:
+```bash
+npm run dev
+```
+### 3. Build for Production (Build Command)
+To test the build process or compile the project into optimized, production-ready assets:
+```bash
+npm run build
+```
+### 4. Preview the Production Build (Preview Command)
+To run and preview the production build locally before deploying:
+```bash
+npm run preview
 ```
